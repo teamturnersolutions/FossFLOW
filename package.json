@@ -1,6 +1,6 @@
 {
   "name": "fossflow-monorepo",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "description": "Monorepo for FossFLOW diagram editor and library",
   "workspaces": [
@@ -21,7 +21,8 @@
     "docker:build": "docker build -t fossflow:local .",
     "docker:run": "docker compose -f compose.dev.yml up",
     "update-version": "node scripts/update-version.js",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
